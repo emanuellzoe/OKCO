@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    background-color: #f1f1f1;
+    font-family: "Poppins", Verdana, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    display: inline;
+    z-index: 2;
+}
+
+nav {
+    background-color: #002ec1;
+    padding: 4vh;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.096);
+}
+
+.pesan {
+    float: right;
+    position: relative;
+    left: 10px;
+    bottom: 31px;
+    padding: 10px 50px;
+    font-weight: bold;
+}
+
+.navi {
+    float: right;
+    position: relative;
+    left: 5px;
+    bottom: 31px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.navi:hover {
+    background-color: #2e5eff;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+
+.search {
+    --padding: 1vh;
+    width: max-content;
+    display: flex;
+    float: left;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    left: 55px;
+    bottom: 4vh;
+}
+
+.search-input {
+    font-size: 16px;
+    color: #333333;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 250px;
+}
+
+.search-input::placeholder, .search-icon {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.search-icon {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.search-icon img {
+    display: block; 
+    width: 24px; 
+    height: auto; 
+}
+
+/* CSS for the form to be neat and stretch to both left and right edges */
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Increased max-width for wider form */
+    margin: 50px auto; /* Center the form */
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%; /* Full width for input */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.form-button {
+    width: 100%; /* Full width for button */
+    padding: 10px;
+    background-color: #002ec1;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    text-align: center; /* Center text */
+}
+
+.form-button:hover {
+    background-color: #2e5eff;
+}
+
+#okco {
+    width: 120px;
+    display: inline;
+    float: left;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+}
+
+#okco1 {
+    width: 80px;
+    float: left;
+    position: relative;
+    bottom: 27px;
+    padding-right: 20px;
+}
+
+footer {
+    display: flex;
+    background-color: #002ec1;
+    padding: 30px;
+    justify-content: center;
+    justify-content: space-between;
+    position: relative;
+    color: white;
+    bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    position: relative;
+    top: 30px;
+    margin: 0 50px;
+}
+
+.about:hover {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

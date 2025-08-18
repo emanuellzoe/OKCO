@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.utama {
+    display: flex;
+    flex-direction: column; /* Menetapkan tata letak konten vertikal */
+    max-width: 1300px; /* Lebar maksimum konten */
+    margin: 0 auto; /* Membuat konten terpusat secara horizontal */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #f1f1f1;
+}
+
+header {
+    position: relative;
+    display: inline;
+    z-index: 2;
+}
+
+nav {
+    background-color: #002ec1;
+    padding: 4vh;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.096);
+}
+
+.navi {
+    float: right;
+    position: relative;
+    left: 10px;
+    bottom: 31px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.navi:hover {
+    background-color: #2e5eff;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+
+.search {
+    --padding: 1vh;
+    width: max-content;
+    display: flex;
+    float: left;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    left: 55px;
+    bottom: 3.4vh;
+}
+
+.search-input {
+    font-size: 16px;
+    color: #333333;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 250px;
+}
+
+.search-input::placeholder,
+.search-icon {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.search-icon {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.search-icon img {
+    display: block; 
+    width: 24px; 
+    height: auto; 
+}
+
+
+.filter a {
+    --padding: 7px;
+    width: max-content;
+    display: flex;
+    float: left;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 5px;
+    position: relative;
+    left: 75px;
+    bottom: 30px;
+    color: white;
+}
+
+.filter-teks {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-left: var(--padding);
+}
+
+#okco {
+    width: 120px;
+    display: inline;
+    float: left;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+}
+
+.kali {
+    color: red;
+}
+
+.icon {
+    color: #002ec1;
+}
+
+hr, .Form-Pemesan input {
+    width: 100%;
+    margin: 10px auto;
+    opacity: 0.4;
+}
+
+.Form-Pemesan input {
+    height: 35px;
+    color: black;
+    font-weight: bold;
+}
+
+.Form-Pemesan input:hover {
+    background-color: #f1f1f1;
+    padding: 2px;
+    border: none;
+    outline: 2px solid #002ec1;
+    border-radius: 2px;
+}
+
+.Form-Pemesan input:focus {
+    background-color: #f1f1f1;
+    padding: 2px;
+    border: none;
+    outline: 2px solid #002ec1;
+    border-radius: 2px;
+}
+
+/* ==================================================== */
+/* .utama {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    clear: left;
+} */
+
+.utama {
+    display: grid;
+    grid-template-areas:  
+      "pertama kedua"
+      "pertama ketiga";
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto 1fr;
+    clear: left;
+  }
+
+.Form {
+    grid-area: pertama;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 4vh;
+    padding: 20px;
+    margin-bottom: 20px; /* Jarak antar form */
+}
+
+.decs {
+    grid-area: kedua;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 4vh;
+    padding: 20px;
+    max-width: 400px; /* Mengatur lebar maksimal agar tidak memanjang */
+    margin-left: 20px; /* Membuat konten terpusat secara horizontal */
+    position: sticky;
+    top: 130px;
+}
+
+.kosong{
+    grid-area: ketiga;
+}
+
+.rincian-pemesanan {
+    position: relative;
+    bottom: 6px;
+    font-weight: bold;
+}
+
+.rincian {
+    padding-bottom: 8px;
+}
+
+.nama-event {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.decs img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tiket-info {
+    padding-top: 5px;
+    padding-bottom: 8px;
+    color: #002ec1;
+    font-weight: bold;
+}
+
+.kanan {
+    float: right;
+}
+
+.satu {
+    position: relative;
+    bottom: 10px;
+}
+
+.tiket-detail {
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
+/* #kotak-diskon {
+    padding: 10px;
+    width: 80%;
+    opacity: 0.4;
+}
+
+#kotak-diskon:hover {
+    background-color: #f1f1f1;
+    padding: 12px;
+    border: none;
+    outline: 2px solid #002ec1;
+    border-radius: 2px;
+}
+
+#kotak-diskon:focus {
+    background-color: #f1f1f1;
+    padding: 12px;
+    border: none;
+    outline: 2px solid #002ec1;
+    border-radius: 2px;
+}
+
+#button-kotak-diskon {
+    width: 10%;
+    height: 10%;
+    margin-left: 5%;
+    padding: 10px;
+    font-weight: bold;
+    color: #f1f1f1;
+    border: #002ec1;
+    border-radius: 1vh;
+    background-color: #002ec1;
+    box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.096);
+}
+
+#button-kotak-diskon:hover {
+    background-color: #2e5eff;
+    cursor: pointer;
+} */
+
+.subtotal, .total, .price {
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
+.Form-Pemesan {
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 4vh;
+    padding: 20px;
+    margin-bottom: 20px; /* Jarak antar form */
+}
+
+.input-number::-webkit-inner-spin-button,
+.input-number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.beli button {
+    width: 100%;
+    height: 10%;
+    margin-top: 8px;
+    padding: 10px;
+    font-weight: bold;
+    color: #f1f1f1;
+    border: #002ec1;
+    border-radius: 1vh;
+    background-color: #002ec1;
+    box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.096);
+}
+
+.beli button:hover {
+    background-color: #2e5eff;
+    cursor: pointer;
+}
+
+.account-teks {
+    position: relative;
+    bottom: 6px;
+    font-weight: bold;
+}
+
+/* ======================================================== */
+
+
+.pesan{
+    float: right;
+    position: relative;
+    left: 9px;
+    bottom: 31px;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    float: right;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Menambahkan jarak antara elemen */
+}
+
+
+.pesan {
+    background: none;
+}
+
+.username {
+    background: none;
+    float: right;
+    position: relative;
+    left: 9px;
+    bottom: 31px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.navi{
+    float: right;
+    position: relative;
+    left: 5px;
+    bottom: 31px;
+    padding: 10px;
+    font-weight: bold;
+}

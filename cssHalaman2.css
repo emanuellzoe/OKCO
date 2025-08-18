@@ -1,0 +1,879 @@
+
+/* .container {
+    width: 90%; 
+    margin: 0 auto; 
+
+} */
+.container {
+    display: flex;
+    flex-direction: column; /* Menetapkan tata letak konten vertikal */
+    /* align-items: center; Mengatur konten secara horizontal di tengah */
+    max-width: 1200px; /* Lebar maksimum konten */
+    margin: 0 auto; /* Membuat konten terpusat secara horizontal */
+
+}   
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.box{
+    clear: left;
+    margin-bottom: 10px;
+    width: 98%;  
+}
+
+.box a img{
+    width: 50px;
+    float: right;
+    clear: right;
+    
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+hr{
+    width: 50%;
+    margin-right: 100%;
+}
+
+
+
+
+
+
+/* --------------------------------------------------- */
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.deskripsi_lanjut h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.deskripsi_lanjut p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(146, 146, 146);
+    line-height: 1.8em;
+}
+
+.beli a{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.pilihan{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #f1f1f1;
+}
+
+.maps h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.headling h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+.jadwal h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.jadwal span{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.jadwal label{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(138, 138, 138);
+    
+}
+
+.deskripsi_lanjutan h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.tiket-detail label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.tiket-detail p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.tiket-detail span{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(255, 145, 0);
+}
+
+.jenis-tiket {
+    font-family: "Poppins", sans-serif;
+    font-weight: 750;
+    font-size: 23px;
+}
+
+.beli-tiket a, .beli-tiket-sold{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.foto-artis p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+}
+
+
+
+
+/* --------------------------------------------------- */
+/* HEADER */
+
+header{
+    position: relative;
+    display: inline;
+    z-index: 2;
+}
+nav{
+    background-color: #002ec1;
+    padding: 4vh;
+    position: sticky ;
+    top: 0;
+    box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.096);
+}
+.navi{
+    float: right;
+    position: relative;
+    left: 10px;
+    bottom: 31px;
+
+    padding: 10px;
+    font-weight: bold;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+.search {
+    --padding: 1vh;
+    width: max-content;
+    display: flex;
+    float: left;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    left: 55px;
+    bottom: 3.4vh;
+}
+.search-input{
+    font-size: 16px;
+    color: #333333;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 250px;
+}
+.search-input::placeholder, .search-icon{
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.search-icon {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.search-icon img {
+    display: block; 
+    width: 24px; 
+    height: auto; 
+}
+
+.filter a{
+    --padding: 7px;
+    width: max-content;
+    display: flex;
+    float: left;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 5px;
+    position: relative;
+    left:75px;
+    bottom: 30px;
+    color: white;
+}
+.filter-teks{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-left: var(--padding);
+}
+#okco{
+    width: 120px;
+    display: inline;
+    float: left;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+}
+
+
+
+/* --------------------------------------------------- */
+/* FOOTER */
+
+footer{
+    display: flex;
+    background-color: #002ec1;
+    padding: 30px;
+    justify-content: space-between;
+    position: relative;
+    color: white;
+    text-align: center;
+    
+    
+
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer p{
+    position: relative;
+    top: 30px;
+    margin: 0 60px;
+    font-size: large;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    vertical-align: middle;
+
+}
+
+#okco1{
+    width: 80px;
+    float: left;
+    position: relative;
+    bottom: 27px;
+    padding-right: 20px;
+    clear: left
+}
+
+/* --------------------------------------------------- */
+/* konten pertama */
+
+.konten_pertama {
+    display: grid;
+    grid-template-areas: 
+      "headling headling" 
+      "pertama kedua";
+    grid-template-columns: 1.5fr 1fr ;
+    grid-template-rows: auto 1fr;
+
+    clear: left;
+    clear: right;
+  }
+  
+  .headling {
+    grid-area: headling;
+
+  }
+  
+  .detail_info_pertama {
+    grid-area: pertama;
+    padding: 20px;
+  }
+
+
+  .detail_info_pertama img {
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto; 
+    box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.096);
+}
+
+  
+  .detail_info_kedua {
+    grid-area: kedua;
+    padding: 0px 20px;
+    margin-top: 40px;
+  }
+
+  .jadwal h2{
+    margin-bottom: 30px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .konten_pertama {
+      grid-template-areas: 
+        "headling headling"
+        "pertama pertama"
+        "kedua kedua";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    
+    .detail_info_kedua {
+        margin-left: 0;
+      }
+
+  }
+
+  
+
+/* --------------------------------------------------- */
+/* TANGGAL */
+
+.tanggal ,.tanggal_text, .tanggal-icon, label{
+    display: flex;
+}
+
+.tanggal{
+    margin: 0 0 10px 0;
+}
+
+.tanggal label,span{
+    padding: 8px 0;
+}
+
+.tanggal-icon{
+    width: 20px;
+    height: 20px;
+    margin: 11px 10px 0 0;
+}
+
+
+
+/* --------------------------------------------------- */
+/* WAKTU */
+.waktu ,.waktu_text, .waktu-icon{
+    display: flex;
+}
+
+.waktu{
+    margin: 0 0 10px 0;
+}
+
+.waktu label,span{
+    padding: 8px 0;
+}
+
+.waktu-icon{
+    width: 20px;
+    height: 20px;
+    margin: 11px 10px 0 0;
+}
+
+
+/* --------------------------------------------------- */
+/* TEMPAT */
+.tempat ,.tempat_text, .tempat-icon{
+    display: flex;
+}
+
+.tempat{
+    margin: 0 0 10px 0;
+}
+
+.tempat label,span{
+    padding: 8px 0;
+}
+
+.tempat-icon{
+    width: 20px;
+    height: 20px;
+    margin: 11px 10px 0 0;
+}
+
+
+/* --------------------------------------------------- */
+/* beli */
+
+
+.beli {
+    padding: 40px 0;
+    margin-top: 25px;
+
+}
+
+.beli a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 150px;
+    background-color: #002ec1;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.beli a:hover{
+    background-color: #2e5eff;
+}
+
+@media screen and (max-width: 900px) {
+    .konten_pertama {
+      grid-template-areas: 
+        "headling headling"
+        "pertama pertama"
+        "kedua kedua";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    
+    .beli a{
+      margin-left: 0;
+      padding: 12px 312px;
+    }
+
+    .beli {
+        text-align: center;
+    }
+
+  }
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* Konten kedua */
+
+
+.konten_kedua {
+    display: grid;
+    grid-template-areas: 
+      "headling2 headling2"
+      "pertama2 pertama2";
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto 1fr;
+    margin-top: 50px;
+    
+}
+
+
+.pilihan{
+    grid-area: headling2;
+    display: flex;
+    
+}
+
+.info_tiket{
+    grid-area: pertama2;
+    
+}
+
+/* .maps{
+    grid-area: kedua2;
+    padding: 0px 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+} */
+
+
+.gambar-sit img{
+    width: 400px;
+}
+
+@media screen and (max-width: 900px) {
+    .konten_kedua {
+        grid-template-areas: 
+          "headling2 headling2"
+          "pertama2 pertama2"
+          "kedua2 kedua2";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-left: 30px;
+    }
+
+    .maps {
+        margin-left: 0;
+    }
+}
+
+
+.pilihan ul{
+    display: flex;
+    list-style-type: none;
+    background-color: yellow;
+}
+
+.pilihan ul li{
+    background-color: tomato;
+    margin-right: 20px;
+    font-size: large;
+}
+
+input[type="radio"] {
+    appearance: none;
+
+}
+
+
+
+
+/* --------------------------------------------------- */
+/* pilihan deskripsi */
+
+
+
+.pilihan-des ,.des-text, .des-icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.des-text{
+    font-size: medium;
+    margin-top: 8px
+    
+}
+
+.des-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+
+.pilihan-des{
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    padding: 10px 35px;
+    background-color: #002ec1;
+}
+.pilihan-des:hover{
+    background-color: #2e5eff;
+}
+
+/* .deskripsi_lanjut ul{
+    list-style-type: none;
+    display: flex;
+    text-align: right center;
+    margin-bottom: 40px;
+}
+.deskripsi_lanjut ul img{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    width: 100px;
+}
+
+.hi {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.8em;
+} */
+
+.deskripsi_lanjut h3{
+    margin-top: 30px;
+}
+.deskripsi_lanjut p{
+    margin-top: 10px;
+}
+.deskripsi_lanjut{
+    margin-bottom: 30px;
+}
+
+/* --------------------------------------------------- */
+/* pilihan tiket */
+
+
+.pilihan-tiket ,.tiket-text, .tiket-icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+
+.tiket-text{
+    font-size: medium;
+    margin-top: 8px
+}
+
+.material-symbols-outlined{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    position: relative;
+    bottom: 4px;
+    
+}
+
+
+
+.pilihan-tiket{
+    margin-left: 20px;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    padding: 9px 55px;
+    background-color: #002ec1;
+}
+
+
+.pilihan-tiket:hover{
+    background-color: #2e5eff;
+}
+
+
+
+
+
+/* --------------------------------------------------- */
+/* kartu tiket */
+
+/* .tiktik{
+    margin: 10px;
+    
+}
+
+.jenis-tiket{
+    margin-bottom: 20px;
+} */
+
+/* .tiket-detail{
+    margin-bottom: 20px;
+} */
+
+/* .tiket-detail label{
+    margin-bottom: 8px;
+}
+
+.border-tiktik{
+    border: solid;
+    margin: 20px;
+
+}
+
+.padding-detail{
+    display: flex;
+    
+} */
+.border-tiktik {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 30px 10px 30px 0;
+    border-style: dashed;
+    border-width: 2.5px;
+    border-radius: 13px;
+    
+}
+
+.tiktik {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.jenis-tiket, .tiket-detail {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.beli-tiket,.beli-tiket2{
+    text-align: right;
+    margin-top: 120px;
+}
+
+.batal-tiket{
+    margin-top: 120px;
+    margin-right: 10px;
+    background-color: rgba(245, 213, 213, 0.533);
+    padding: 7px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: red;
+    border-color: red;
+    border-width: 2px;
+    
+}
+
+
+
+.tiket-detail p{
+    color: #2e5eff;
+    margin-top: 5px;
+}
+.tiket-detail label{
+    margin-bottom: 5px;
+    color: #ccc
+}
+
+
+
+.beli-tiket ,.beli-tiket2 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    background-color: #002ec1;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.beli-tiket , .beli-tiket2 {
+    background-color: #002ec1;
+}
+
+.hidden {
+    display: none;
+}
+
+.beli-tiket-sold{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    padding: 8px 0;
+    border-radius: 7px;
+    text-align: center;
+    border: 3px solid rgb(255, 62, 62);
+    color: rgb(255, 62, 62);
+    margin-top: 80px;
+}
+
+
+.number{
+    width: 90px;
+    height: 20px;
+    padding: 10px;
+    border: transparent;
+    outline: transparent;
+    margin-top: 4px;
+    font-size: 20px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+
+.maps iframe{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top: 13px;
+}
+
+@media screen and (max-width: 900px) {
+    .konten_kedua {
+        grid-template-areas: 
+          "headling2 headling2"
+          "pertama2 pertama2"
+          "kedua2 kedua2";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .maps {
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+}
+
+
+.tiket-detail input{
+    background-color: rgb(237, 237, 237);
+}
+
+
+/* --------------------------------------------------- */
+
+
+.number.hidden {
+    display: none;
+}
+
+
+.pesan{
+    float: right;
+    position: relative;
+    left: 9px;
+    bottom: 31px;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    float: right;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Menambahkan jarak antara elemen */
+}
+
+
+.pesan {
+    background: none;
+}
+
+.username {
+    background: none;
+    float: right;
+    position: relative;
+    left: 9px;
+    bottom: 31px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.navi{
+    float: right;
+    position: relative;
+    left: 5px;
+    bottom: 31px;
+    padding: 10px;
+    font-weight: bold;
+}

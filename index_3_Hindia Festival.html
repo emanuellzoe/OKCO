@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okco Tiket - Checkout</title>
+    <link rel="stylesheet" href="halaman-3.css">
+    <!-- icon pesan dan tiket -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img id="okco" src="okco-png.png" alt="okco"></a>
+            <form>
+                <div class="search">
+                    <span class="search-icon material-symbols-outlined">search</span>
+                    <input class="search-input" type="search" placeholder="Search">
+                </div>
+            </form>
+            <div class="filter">
+                <a href="filter.html">
+                    <span class="filter-icon material-symbols-outlined">filter_alt</span>
+                    <span class="filter-teks">Filter</span>
+                </a>
+            </div>
+            <a href="#" class="navi">Login</a>
+        </nav>
+    </header>
+    <div class="utama">
+        <div class="Form">
+            <div class="Form-Pemesan">
+                <div class="Data-Pemesan">
+                    <span class="material-symbols-outlined icon">account_box</span>
+                    <span class="account-teks">Data Diri Pemesan</span>
+                </div>
+                <hr>
+                <form action="sukses.html">
+                    <div class="nama">
+                        <label for="nama lengkap">Nama Lengkap <span class="kali">*</span></label><br>
+                        <input type="text" name="nama lengkap" id="nama lengkap" maxlength="50" required oninvalid="this.setCustomValidity('Data Masih Kosong atau Salah')" oninput="this.setCustomValidity('')" >
+                    </div>
+                    <div class="nik">
+                        <label for="nik">NIK <span class="kali">*</span></label><br>
+                        <input type="number" name="nik" class="input-number" max="9999999999999999" required oninvalid="this.setCustomValidity('Data Masih Kosong atau Salah')" oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email <span class="kali">*</span></label><br>
+                        <input type="text" name="email" id="email" maxlength="50" required oninvalid="this.setCustomValidity('Data Masih Kosong atau Salah')" oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="nomor">
+                        <label for="nomor">No.Whatsapp <span class="kali">*</span></label><br>
+                        <input type="number" name="nomor" class="input-number" max="9999999999999" required oninvalid="this.setCustomValidity('Data Masih Kosong atau Salah')" oninput="this.setCustomValidity('')">
+                    </div>
+                    
+                    <button type="submit" class="teruskan">Memesan</button>
+                </form>
+            </div>
+        </div>
+        <div class="decs">
+            <div class="rincian">
+                <span class="material-symbols-outlined icon">news</span>
+                <span class="rincian-pemesanan">Rincian Pesanan</span>
+            </div>
+            <div class="banner-event">
+                <img src="img/Banner Hindia.jpg" alt="foto event">
+            </div>
+            <div class="nama-event">
+                <label for>Sebuah Pertunjukan Oleh Hindia dan Kawan-Kawan "DEFRAG"</label>
+            </div>
+            <hr>
+            <div class="tiket-info">
+                <label for>Tiket</label>
+                <label for class="kanan">Jumlah</label>
+            </div>
+            <div class="tiket-detail">
+                <label for>Reguler: Festival</label><br>
+                <span class="harga-tiket">Rp 250.000</span>
+                <label for class="kanan satu">x1</label>
+            </div>
+            <hr>
+            <div class="uang">
+                <div class="subtotal">
+                    <label for class="tiket-info">Subtotal</label>
+                    <span class="harga-tiket kanan">Rp 250.000</span>
+                </div>
+                <div class="price">
+                    <label for class="tiket-info">Biaya Layanan</label>
+                    <span class="biaya-harga-tiket kanan">Rp 10.000</span>
+                </div>
+                <hr>
+                <div class="total">
+                    <label for class="tiket-info">Total</label>
+                    <span class="harga-tiket kanan">Rp 260.000</span>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
